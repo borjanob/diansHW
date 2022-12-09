@@ -1,4 +1,10 @@
-Link to GUI MockUp designed in Figma : https://www.figma.com/file/OV1lPOab0m9yO94jt4pZNL/Untitled?node-id=2%3A5&t=EroyLragywARxsic-3
+# Линк до GUI Mockup-от на апликацијата Click N Go кој е дизајниран со помош на алатката Figma.
+На овој линк се поставени сите погледи од апликацијата а исто така можни се движења низ истите со помош на функционалноста за интеракција помеѓу екрани благодарение на Figma.
+
+https://www.figma.com/file/OV1lPOab0m9yO94jt4pZNL/Untitled?node-id=2%3A5&t=EroyLragywARxsic-3
 
 
-Link to GUI Prototype video: https://youtu.be/AUvasX_W-DA
+# Линк до YouTube видео од GUI Mockup-ot.
+Ова видео е снимено со цел да се види како се поврзани погледите на апликацијата и како се очекува апликацијата да работи.
+
+https://youtu.be/AUvasX_W-DA
