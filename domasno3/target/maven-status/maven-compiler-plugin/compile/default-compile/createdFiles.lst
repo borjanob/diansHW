@@ -1,0 +1,11 @@
+com\dians\BankomatiVoBitolaJavaSpring\Service\impl\ATMPostsServiceImpl.class
+com\dians\BankomatiVoBitolaJavaSpring\Model\ATM.class
+com\dians\BankomatiVoBitolaJavaSpring\Service\impl\ATMServiceImpl.class
+com\dians\BankomatiVoBitolaJavaSpring\BankomatiVoBitolaJavaSpringApplication.class
+com\dians\BankomatiVoBitolaJavaSpring\Controller\ATMController.class
+com\dians\BankomatiVoBitolaJavaSpring\Model\ATMPosts.class
+com\dians\BankomatiVoBitolaJavaSpring\Service\ATMService.class
+com\dians\BankomatiVoBitolaJavaSpring\Controller\ATMPostsController.class
+com\dians\BankomatiVoBitolaJavaSpring\Repository\ATMPostRepository.class
+com\dians\BankomatiVoBitolaJavaSpring\Repository\ATMRepository.class
+com\dians\BankomatiVoBitolaJavaSpring\Service\ATMPostsService.class
