@@ -22,6 +22,9 @@ function App() {
     .catch(err=>console.log(err))
   }
 
+  useEffect(()=>{
+    getBanks();
+  },[])
 
   return (
     <div className="App">
