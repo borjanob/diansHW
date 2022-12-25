@@ -1,5 +1,6 @@
 package com.dians.BankomatiVoBitolaJavaSpring.Service.impl;
 
+import com.dians.BankomatiVoBitolaJavaSpring.Model.ATM;
 import com.dians.BankomatiVoBitolaJavaSpring.Model.ATMPosts;
 import com.dians.BankomatiVoBitolaJavaSpring.Repository.ATMPostRepository;
 import com.dians.BankomatiVoBitolaJavaSpring.Service.ATMPostsService;
