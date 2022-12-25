@@ -8,5 +8,7 @@ import java.util.Optional;
 public interface ATMService {
     List<ATM> getAllAtm();
     Optional<ATM> saveAll(String name, String address, String city);
+    Optional<ATM> findById(Long id);
+    void deleteById(Long id);
 
 }

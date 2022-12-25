@@ -31,5 +31,15 @@ public class ATMServiceImpl implements ATMService {
         return Optional.of(this.atmRepository.save(new ATM(name,address,city)));
     }
 
+    @Override
+    public Optional<ATM> findById(Long id) {
+        return atmRepository.findById(id);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        atmRepository.deleteById(id);
+    }
+
 
 }
