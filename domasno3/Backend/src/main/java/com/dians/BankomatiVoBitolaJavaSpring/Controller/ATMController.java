@@ -21,7 +21,7 @@ public class ATMController {
     }
 
     @GetMapping("/getATM")
-    public List<ATM> getAll(){
+    public List<ATM> getAll() {
         List<ATM> getAllList = atmService.getAllAtm();
         return getAllList;
     }
@@ -29,9 +29,21 @@ public class ATMController {
     @PostMapping("/add")
     public ResponseEntity<ATM> save(@RequestParam String name,
                                     @RequestParam String address,
-                                    @RequestParam String city){
-        return this.atmService.saveAll(name,address,city)
+                                    @RequestParam String city) {
+        return this.atmService.saveAll(name, address, city)
                 .map(atm -> ResponseEntity.ok().body(atm))
                 .orElseGet(() -> ResponseEntity.badRequest().build());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ATM> findById(@PathVariable Long id) {
+        return this.atmService.findById(id)
+                .map(atm -> ResponseEntity.ok().body(atm))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteById(@PathVariable Long id){
+         atmService.deleteById(id);
     }
 }

@@ -5,7 +5,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -20,5 +24,13 @@ public class ATMPosts {
     private Long id;
     private String title;
     private String content;
-    private Date publishDate;
+    @DateTimeFormat(pattern = "dd.MM.yyyy")
+    private LocalDate publishDate;
+
+    public ATMPosts(String title, String content, LocalDate publishDate) {
+        this.title = title;
+        this.content = content;
+        this.publishDate = publishDate;
+    }
 }
+
