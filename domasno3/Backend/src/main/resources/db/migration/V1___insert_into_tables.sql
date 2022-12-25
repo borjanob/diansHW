@@ -45,3 +45,4 @@ INSERT INTO atmposts(content,publish_date,title)VALUES ('Bankomatot na Stopanska
 INSERT INTO atmposts(content,publish_date,title)VALUES  ('Bankomatot na Stopanska Banka na il.Prilepska 44 e nadvor od funkcija vo narednite 7 dena', '2022/12/22', 'Bankomat nadvor od funkcija');
 INSERT INTO atmposts(content,publish_date,title)VALUES   ('Bankomatot na TTK Banka na ul.Stolarska 1-g ke bide nadvor od funkcija na 01.01.2023 poradi servis', '2022/12/21', 'Bankomat nadvor od funkcija');
 INSERT INTO atmposts(content,publish_date,title)VALUES   ('Bankomatot na Uni-Banka na ul.Leninova ke bide otstranet na 10.03.2023', '2022/12/25', 'Bankomat ke bide otstranet');
+INSERT INTO atmposts(content,publish_date,title)VALUES   ('Bankomatot na Uni-Banka na ul.Leninova ke bide otstranet na 10.03.2023', '2022/12/25', 'Bankomat ke bide otstranet za kratko');
