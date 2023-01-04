@@ -24,6 +24,7 @@ import Map from '../Map/Map'
 const ATM = ({isActive,setIsActive,activeBank,setActiveBank,banks}) => {
 
   const [open, setOpen] = React.useState(false);
+  const [isTrue,setIsTrue] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -33,12 +34,34 @@ const ATM = ({isActive,setIsActive,activeBank,setActiveBank,banks}) => {
     setOpen(false);
   };
 
+  const banki = [
+    {
+      name:"Стопанска Банка АД Скопје",
+      address:"Улица непозната бб"
+    },
+    {
+      name:"Комерцијална Банка АД Скопје",
+      address:"Улица непозната бб"
+    },
+  ]
+
   
   const [filtered,setFiltered] = useState(banks);
   const handleBank = (e) =>{
+    
     if(e.target.className==="bankImg")
     {
-      setActiveBank(e.target.parentNode.getAttribute("bank"));
+        setActiveBank(e.target.parentNode.getAttribute("bank"));
+        
+        if(!isTrue){
+          setFiltered(filtered.filter(bank=>bank.name.toLowerCase().includes(e.target.parentNode.getAttribute("bank").toLowerCase())))
+          e.target.parentNode.style.backgroundColor="white";
+        }
+        else{
+          setFiltered(banks);
+          e.target.parentNode.style.backgroundColor="";
+        }
+        setIsTrue(!isTrue);
     }
     
   }
@@ -121,15 +144,15 @@ const ATM = ({isActive,setIsActive,activeBank,setActiveBank,banks}) => {
         <Navbar />
         <div className='atm-header'>
             <div className='atm-aside'>
-              <BankLink source={uni} handleClick = {handleBank} bank="uni" />
-              <BankLink source={stopanska} handleClick = {handleBank} bank="stopanska" />
-              <BankLink source={procredit} handleClick = {handleBank} bank="procredit" />
-              <BankLink source={halk} handleClick = {handleBank} bank="halk" />
-              <BankLink source={ohridska} handleClick = {handleBank} bank="ohridska" />
-              <BankLink source={ccbank} handleClick = {handleBank} bank="ccbank" />
-              <BankLink source={silkRoad} handleClick = {handleBank} bank="silkRoad" />
-              <BankLink source={kom} handleClick = {handleBank} bank="kom" />
-              <BankLink source={nlb} handleClick = {handleBank} bank="nlb" />
+              <BankLink source={uni} handleClick = {handleBank} bank="Уни" />
+              <BankLink source={stopanska} handleClick = {handleBank} bank="Стопанска" />
+              <BankLink source={procredit} handleClick = {handleBank} bank="Прокредит" />
+              <BankLink source={halk} handleClick = {handleBank} bank="Халк" />
+              <BankLink source={ohridska} handleClick = {handleBank} bank="Охридска" />
+              <BankLink source={ccbank} handleClick = {handleBank} bank="Централна" />
+              <BankLink source={silkRoad} handleClick = {handleBank} bank="Силк" />
+              <BankLink source={kom} handleClick = {handleBank} bank="Комерцијална" />
+              <BankLink source={nlb} handleClick = {handleBank} bank="НЛБ" />
             </div>
             <div className='atm-main'>
               <div className='atm-flex'>

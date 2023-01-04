@@ -11,7 +11,7 @@ const Blog = () => {
             <div className='blog-head-left'>
                 <h1>Блог</h1>
                 <div className='blog-info'>
-                <div className='blog-card'>
+                    <div className='blog-card'>
                         <h2>Банкоматот на Халк Банка на Ул. Непозната бр.112 е вратен во функција.</h2>
                         <h4>Објавено на: 09.12.2022</h4>
                     </div>
